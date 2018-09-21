@@ -1,0 +1,255 @@
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+header {
+    height: 60px;
+    /* background: rgba(255,255,255,0.5); */
+    position: fixed;
+    border-radius: 50px;
+
+    background: #7c2297;
+    opacity: 0.5;
+}
+
+header span, a {
+    opacity: 1;
+}
+
+.logo {
+    width: 120px;
+    margin-right: auto;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.fa-brain {
+    font-size: 40px;
+}
+
+header ul {
+    margin-bottom: 0;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    height: 66px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover {
+    color: grey;
+    font-size: 0.9em;
+    background: #e3e3e3;
+    text-decoration: none;
+}
+
+.burger {
+    color: grey;
+    height: 66px;
+    padding: 0 20px;
+}
+
+.burger:hover {
+    color: grey;
+    background: #e3e3e3;
+    text-decoration: none;
+}
+
+/* Media Query */
+.visible-for-mobile {
+    display: flex;
+    align-items: center;
+    height: 66px;
+}
+
+.invisible-for-mobile {
+    display: none;
+}
+
+header {
+    width: 250px;
+}
+
+@media (min-width: 576px) { 
+
+    header {
+        width: auto;
+    }
+
+    .visible-for-mobile {
+        display: none;
+    }
+    
+    .invisible-for-mobile {
+        display: flex;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
+.hero {
+    background: 
+        linear-gradient(
+        60deg, 
+        rgba(0,0,0,0.25) 50%,
+        rgba(255, 245, 137,0.25)),
+        url('../img/dumplings1.jpg')
+    ;
+    background-size: cover;
+    background-position: center;
+
+    height: 600px;
+}
+
+.hero-content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(25, 25, 25, 0.5);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: rgb(255, 245, 137);
+    font-size: 1.6em;
+}
+
+.hero-content p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+.hero-content a {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #ccc;
+    padding: 10px;
+
+    border: 1px #ccc solid;
+    border-radius: 10px;
+}
+
+.hero-content a:hover {
+    color:rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255) solid;
+    text-decoration: none;
+    background: rgba(255, 245, 137, 0.2);
+
+    border: 1px #ccc dashed;
+}
+
+@media (max-width: 576px) { 
+    .hero {
+        height: 500px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+main {
+    min-height: 400px;
+    padding: 80px 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    height: auto;
+    background: #7c2297;
+    padding: 40px 0 80px;
+}
+
+footer h2{
+    color: #4d4d4d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+footer ul{
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 8px;
+}
+
+footer a {
+    color: #888;
+    padding: 5px 5px 5px 0;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+footer a:hover {
+    padding-left: 5px;
+    border-bottom: 3px solid grey;
+    border-right: 2px solid grey;
+    border-radius: 10px;
+    color: #222;
+    background: #bbb;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.social-icons i {
+    margin-right: 10px;
+}
+
+.footer-col > * {
+    margin-left: 30%;
+}
+
+.footer-col h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 0;
+    border-bottom: 2px grey solid;
+}
