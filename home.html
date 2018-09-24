@@ -41,8 +41,8 @@ Example could be email input, comments input and a send button -->
     <header>
         <div class='container d-flex align-items-stretch h-100'>
             <div class='logo d-flex align-items-center'>
-                <i class="fas fa-brain"></i>
-                <span>FoodManiac</span>
+                <i class="far fa-heart"></i>
+                <span>FoodTinder</span>
             </div>
             <ul class='invisible-for-mobile align-items-center'>
                 <li><a href="#">Home</a></li>
@@ -51,52 +51,67 @@ Example could be email input, comments input and a send button -->
                 <li><a href="#">Contact</a></li>
             </ul>
             <!-- Hamburger menu -->
-            <a class='burger visible-for-mobile' href="#">
-                <i class="fas fa-bars">
-                </i>
+            <a class='burger visible-for-mobile' id='burger' href="#">
+                <i class="fas fa-bars"></i>             
+                
+                <ul class='burger-closed' id='burger-list'>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>  
             </a>
+
 
         </div>
     </header>
 
     <div class='hero container-fluid d-flex align-items-center'>
         <div class='hero-content'>
-            <h1>Your cravings are heard</h1>
-            <p>We connect people who eat food with food makers</p>
-            <button>Find your food now!</button>
+            <h1>Like Tinder, but with food</h1>
+            <p>We connect food lovers with food makers</p>
+            <button>Find hot dates!</button>
         </div>
     </div>
 
-    <div class='main'></div>
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class='wrapper'>
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia explicabo unde aut corporis. Architecto unde laboriosam perspiciatis. Voluptatem placeat fugiat beatae voluptas magnam qui, eaque error maxime facere, ipsum labore!</p>
+        </div>
+    </main>
 
     <!-- FOOTER SECTION -->
     <footer>
         <div class='container'>
             <div class='row'>
                 <div class='col-sm-6 col-md-3 footer-col'>
-                    <h2>Services</h2>
-                    <ul>
-                        <li><a href="#">Consultation</a></li>
-                        <li><a href="#">Refactoring</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Maintenance</a></li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-md-3 footer-col'>
-                    <h2>Projects</h2>
-                    <ul>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">Desktop Apps</a></li>
-                        <li><a href="#">Mobile Apps</a></li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-md-3 footer-col'>
                     <h2>Company</h2>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-md-3 footer-col'>
+                    <h2>Community</h2>
+                    <ul>
                         <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tech Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-md-3 footer-col'>
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Intellectual Property</a></li>
                     </ul>
                 </div>
                 <div class='col-sm-6 col-md-3 footer-col'>
@@ -111,6 +126,8 @@ Example could be email input, comments input and a send button -->
             </div>
         </div>
     </footer>
+
+    <script src="./app4.js"></script>
 
 </body>
 

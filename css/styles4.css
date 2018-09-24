@@ -17,13 +17,16 @@ h1 {
 Header
 * * * * * * * * * * * * * * * * * * * * */
 header {
-    height: 60px;
+    height: 66px;
     /* background: rgba(255,255,255,0.5); */
     position: fixed;
     border-radius: 50px;
 
-    background: #7c2297;
-    opacity: 0.5;
+    background: rgba(124, 34, 151, 0.65);
+    color: #45911D;
+    /* opacity: 0.5; */
+
+    z-index: 1000;
 }
 
 header span, a {
@@ -40,7 +43,7 @@ header span, a {
     font-style: italic;
 }
 
-.fa-brain {
+.fa-heart {
     font-size: 40px;
 }
 
@@ -55,7 +58,7 @@ header ul li {
 
 header ul li a {
     font-family: 'Roboto', sans-serif;
-    color: #222;
+    color: #45911D;
     font-size: 0.9em;
     text-transform: uppercase;
     height: 66px;
@@ -63,25 +66,57 @@ header ul li a {
 
     display: flex;
     align-items: center;
+    transition: 0.5s;
 }
 
 header ul li a:hover {
-    color: grey;
+    color: white;
     font-size: 0.9em;
-    background: #e3e3e3;
+    background: rgba(178, 23, 178, 0.65);
     text-decoration: none;
+    border-bottom: 5px solid #45911D;
+    border-top: 5px solid #45911D;
+
 }
 
 .burger {
-    color: grey;
+    color: #45911D;
     height: 66px;
     padding: 0 20px;
+    transition: 0.5s;
 }
 
 .burger:hover {
-    color: grey;
-    background: #e3e3e3;
+    color: white;
+    background: rgba(178, 23, 178, 0.65);
     text-decoration: none;
+    border-bottom: 5px solid #45911D;
+    border-top: 5px solid #45911D;
+}
+
+.opened {
+    background: rgba(178, 23, 178, 0.65);
+}
+
+.burger-closed {
+    display: none;
+}
+
+.burger-opened {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 66px;
+}
+
+.burger-opened li {
+    margin: auto;
+    background: rgba(178, 23, 178, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+
 }
 
 /* Media Query */
@@ -112,6 +147,10 @@ header {
     .invisible-for-mobile {
         display: flex;
     }
+
+    #burger-list {
+        display: none;
+    }
 }
 
 
@@ -121,9 +160,9 @@ Hero
 .hero {
     background: 
         linear-gradient(
-        60deg, 
-        rgba(0,0,0,0.25) 50%,
-        rgba(255, 245, 137,0.25)),
+        180deg, 
+        rgba(0,0,0,0.25) 75%,
+        rgba(178, 23, 178, 0.25)),
         url('../img/dumplings1.jpg')
     ;
     background-size: cover;
@@ -146,7 +185,7 @@ Hero
 }
 
 .hero-content h1 {
-    color: rgb(255, 245, 137);
+    color: #8FFF54;
     font-size: 1.6em;
 }
 
@@ -190,6 +229,12 @@ Main
 main {
     min-height: 400px;
     padding: 80px 0;
+
+    /* background: #D754FF; */
+    /* background: #F0DC2B; */
+    background: #aaa;
+    /* color: #ddd; */
+    color: #444;
 }
 
 
@@ -203,8 +248,8 @@ footer {
 }
 
 footer h2{
-    color: #4d4d4d;
-    font-size: 0.9em;
+    color: #45911D;
+    font-size: 1.2em;
     text-transform: uppercase;
     margin: 0 0 20px 0;
 }
@@ -221,22 +266,19 @@ footer li {
 
 footer a {
     color: #888;
-    padding: 5px 5px 5px 0;
+    /* padding: 5px 5px 5px 0; */
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 300;
 }
 
-footer a:hover {
-    padding-left: 5px;
-    border-bottom: 3px solid grey;
-    border-right: 2px solid grey;
-    border-radius: 10px;
-    color: #222;
-    background: #bbb;
+footer a:hover{
+    color: white;
     text-decoration: none;
-    font-size: 0.8em;
-    font-weight: 300;
+}
+
+footer a:hover footer li {
+    display: none;
 }
 
 .social-icons i {
@@ -251,5 +293,6 @@ footer a:hover {
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 0;
-    border-bottom: 2px grey solid;
+    border-left: 5px #45911D solid;
+    padding-left: 5px;
 }
