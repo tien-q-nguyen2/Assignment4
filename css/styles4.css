@@ -248,6 +248,7 @@ main {
     background: #ccc;
     /* color: #ddd; */
     color: #444;
+    font-family: 'Merriweather', serif;
 }
 
 main h2 {
@@ -330,11 +331,12 @@ footer {
     height: auto;
     background: #7c2297;
     padding: 40px 0 80px;
+    font-family: 'Merriweather', serif;
 }
 
 footer h2{
     color: #45911D;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-transform: uppercase;
     margin: 0 0 20px 0;
 }
@@ -353,7 +355,7 @@ footer a {
     color: #888;
     /* padding: 5px 5px 5px 0; */
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 300;
     /* border-bottom: 2px transparent;
     border-top: 2px transparent; */
@@ -363,8 +365,8 @@ footer a:hover{
     color: white;
     text-decoration: none;
     transition: 0.1s;
-    border-bottom: #8FFF54 solid;
-    border-top: #8FFF54 solid;
+    border-bottom: 2px #8FFF54 solid;
+    border-top: 2px #8FFF54 solid;
 }
 
 footer a:hover footer li {
