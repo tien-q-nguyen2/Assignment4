@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <!-- insert link to Google Fonts here later -->
-    <link rel="stylesheet" href='css/styles4.css'>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Permanent+Marker" rel="stylesheet">    <link rel="stylesheet" href='css/styles4.css'>
 </head>
 
 <!-- 1. Home / Main
@@ -53,15 +53,14 @@ Example could be email input, comments input and a send button -->
             <!-- Hamburger menu -->
             <a class='burger visible-for-mobile' id='burger' href="#">
                 <i class="fas fa-bars"></i>             
-                
-                <ul class='burger-closed' id='burger-list'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>  
             </a>
 
+            <ul class='burger-closed' id='burger-list'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>  
 
         </div>
     </header>
@@ -69,8 +68,9 @@ Example could be email input, comments input and a send button -->
     <div class='hero container-fluid d-flex align-items-center'>
         <div class='hero-content'>
             <h1>Like Tinder, but with food</h1>
-            <p>We connect food lovers with food makers</p>
-            <button>Find hot dates!</button>
+            <p>We match food lovers with food makers</p>
+            <!-- <button>Find hot dates</button> -->
+            <a href="#">Find Hot Dates</a>
         </div>
     </div>
 
@@ -79,6 +79,15 @@ Example could be email input, comments input and a send button -->
         <div class='wrapper'>
             <h2>Content</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia explicabo unde aut corporis. Architecto unde laboriosam perspiciatis. Voluptatem placeat fugiat beatae voluptas magnam qui, eaque error maxime facere, ipsum labore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quos magni hic beatae error debitis suscipit accusamus culpa commodi, quas facere assumenda vitae dicta. Ab sint quia quasi atque autem!</p>
+
+            <div class='imgs-container'>
+                <img src="./img/main1.jpg" alt="Love sucks">
+                <img src="./img/main2.jpg" alt="Food rocks">
+                <!-- <div class='hover-area'></div> -->
+                <h1>Love <span class='span1'>rocks.</span>
+                    <span class='span2'> sucks. Food rocks.</span></h1>
+            </div>
         </div>
     </main>
 
