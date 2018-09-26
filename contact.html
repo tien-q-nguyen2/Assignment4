@@ -68,6 +68,33 @@ Example could be email input, comments input and a send button -->
     <main>
         <div class='wrapper'>
             <h2>Drop us a line... Er, we mean email.</h2>
+
+            <label for='user-email'>Your Email:
+            <!-- value='example' ;; type = tel, email, password-->
+            <input 
+                type="email" 
+                id='user-email'
+                name='user-email' 
+                placeholder='youremail@domain.com' />
+            </label> 
+
+            <br/>
+
+            <label for='user-name'>Your Name:
+            <!-- value='example' ;; type = tel, email, password-->
+            <input 
+                type="text" 
+                id='user-name'
+                name='user-name' 
+                placeholder='your preferred name' />
+            </label> 
+
+            <br/>
+
+            <label for='user-email'>Comment/Question:<br/>
+            <textarea name='textarea'></textarea>
+            </label>
+
         </div>
     </main>
 
