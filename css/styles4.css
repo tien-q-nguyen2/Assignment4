@@ -192,7 +192,7 @@ Hero
     url('../img/hero-about.jpg');
 
     background-size: cover;
-    background-position: 75% 50%;
+    background-position: 60% 50%;
 }
 
 .hero-product {
@@ -216,7 +216,7 @@ Hero
     url('../img/hero-contact.jpg');
 
     background-size: cover;
-    background-position: center;
+    background-position: 80% 50%;
 }
 
 .hero-content {
