@@ -192,7 +192,7 @@ Hero
     url('../img/hero-about.jpg');
 
     background-size: cover;
-    background-position: 60% 50%;
+    background-position: 60% 20%;
 }
 
 .hero-product {
