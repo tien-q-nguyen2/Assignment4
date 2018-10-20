@@ -338,6 +338,10 @@ img {
     opacity: 0;
 }
 
+.imgs-container {
+    overflow: hidden;
+}
+
 .trigger:hover ~ .imgs-container h1 .span1 {
     transition-duration: 0.5s;
     text-decoration-line: line-through;
