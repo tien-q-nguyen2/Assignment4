@@ -1,7 +1,7 @@
 # Assignment4
 Four Page Website
 
-Link to Deployed Website: https://assignment4-iaqhqznsho.now.sh/
+Link to website: https://tien-q-nguyen2.github.io/Assignment4/
 
 Official assignment description:
 --
