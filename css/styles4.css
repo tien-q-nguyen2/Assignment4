@@ -329,6 +329,10 @@ img {
     transform: translate(0, 0) rotate(-720deg);
 }
 
+.special-wrapper {
+    overflow: hidden;
+}
+
 .imgs-home h1 {
     font-family: 'Permanent Marker', cursive;
     color: rgb(179, 59, 179);
@@ -336,10 +340,6 @@ img {
 
 .imgs-home .span2 {
     opacity: 0;
-}
-
-.imgs-container {
-    overflow: hidden;
 }
 
 .trigger:hover ~ .imgs-container h1 .span1 {
